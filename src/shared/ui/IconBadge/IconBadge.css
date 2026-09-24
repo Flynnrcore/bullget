@@ -1,0 +1,20 @@
+.icon-badge {
+  display: inline-grid;
+  flex: 0 0 3rem;
+  width: 3rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--background-color);
+}
+
+.icon-badge__icon {
+  display: block;
+  flex: 0 0 1.5rem;
+  width: 1.5rem;
+  aspect-ratio: 1;
+  background-color: var(--icon-color);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}

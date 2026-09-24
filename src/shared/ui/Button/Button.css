@@ -1,0 +1,37 @@
+button {
+  padding: 10px 12px;
+  border: 0px;
+  border-radius: 8px;
+  color: white;
+  width: 170px;
+  background-color: #04523a;
+}
+
+@media (min-width: 424px) {
+  button {
+    padding: 12px 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  button {
+    font-size: 1.2em;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1439px) {
+  button {
+    font-size: 1.2em;
+    width: 290px;
+    padding: 16px 20px;
+  }
+}
+
+@media (min-width: 3840px) {
+  button {
+    font-size: 1.5em;
+    width: 360px;
+    padding: 20px 24px;
+  }
+}

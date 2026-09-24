@@ -1,0 +1,307 @@
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brand > p {
+  margin-top: -10px;
+  font-size: 0.8rem;
+}
+
+.brand__logo {
+  display: flex;
+  align-items: end;
+  padding: 0px 8px;
+}
+
+.brand__logo img {
+  width: 4rem;
+}
+
+.brand__logo h1 {
+  font-family: 'Glina', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1080 / 1180;
+  gap: 0;
+  background-image: url('/mainpage_mobile.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1;
+}
+
+.hero__content .text-secondary {
+  max-width: 50%;
+}
+
+.page-section {
+  padding: 16px;
+}
+
+.feature-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.steps-section {
+  flex-direction: column;
+}
+
+.feature-card {
+  background-color: white;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 12px;
+}
+
+.feature-card > div {
+  min-width: 0;
+}
+
+.feature-card p {
+  max-width: 95%;
+}
+
+.steps-section__item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  aspect-ratio: 1080 / 330;
+  background-image: url('/bottom-mascot.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.cta-section h3 {
+  max-width: 50%;
+  line-height: 1.1;
+}
+
+.cta-section p {
+  font-size: 0.8rem;
+  max-width: 60%;
+}
+
+.analytics-section__image {
+  display: block;
+  max-width: 100%;
+}
+
+.analytics-section__image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 767px) {
+  .brand {
+    margin-bottom: 12px;
+  }
+
+  .hero {
+    aspect-ratio: 2 / 0.8;
+    background-image: url('/mainpage_desktop.webp');
+  }
+
+  .feature-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .steps-section {
+    flex-direction: column;
+  }
+
+  .feature-section > :first-child {
+    flex: 0 0 100%;
+  }
+
+  .feature-section > .feature-card {
+    flex: 1 1 0;
+  }
+
+  .steps-section > .steps-section__item {
+    flex: 0 0 0;
+  }
+
+  .feature-card h4 {
+    font-size: 16px;
+  }
+
+  .feature-card p {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .page-section {
+    padding: 32px 48px;
+  }
+
+  .brand__logo {
+    padding: 0 48px;
+  }
+
+  .brand__logo img {
+    width: 5rem;
+  }
+
+  .brand__logo h1 {
+    font-size: 48px;
+  }
+
+  .hero__content {
+    gap: 12px;
+    max-width: 620px;
+  }
+
+  .hero__content .text-secondary {
+    max-width: 420px;
+  }
+
+  .feature-card {
+    min-height: 88px;
+    padding: 16px;
+  }
+
+  .feature-card h4 {
+    font-size: 18px;
+  }
+
+  .analytics-section {
+    display: flex;
+    gap: 12px;
+  }
+
+  .analytics-section__image {
+    width: 100vw;
+  }
+
+  .cta-section h3 {
+    font-size: 32px;
+  }
+
+  .feature-card p,
+  .cta-section p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .page-section {
+    padding: 48px 7vw;
+  }
+
+  .brand__logo {
+    padding: 0 7vw;
+  }
+
+  .brand__logo img {
+    width: 6rem;
+  }
+
+  .brand__logo h1 {
+    font-size: 56px;
+  }
+
+  .hero__content {
+    gap: 16px;
+    max-width: 760px;
+  }
+
+  .hero__content .text-secondary {
+    max-width: 520px;
+  }
+
+  .feature-card {
+    min-height: 112px;
+    padding: 24px;
+  }
+
+  .feature-card h4 {
+    font-size: 22px;
+  }
+
+  .feature-card p {
+    font-size: 18px;
+  }
+
+  .cta-section h3 {
+    font-size: 36px;
+  }
+
+  .feature-card p,
+  .cta-section p {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 3839px) {
+  .page-section {
+    padding: 72px 8vw;
+  }
+
+  .brand__logo {
+    padding: 0 8vw;
+  }
+
+  .brand__logo img {
+    width: 8rem;
+  }
+
+  .brand__logo h1 {
+    font-size: 72px;
+  }
+
+  .hero__content {
+    gap: 24px;
+    max-width: 980px;
+  }
+
+  .hero__content .text-secondary {
+    max-width: 680px;
+  }
+
+  .feature-card {
+    min-height: 144px;
+    padding: 32px;
+  }
+
+  .feature-card h4 {
+    font-size: 28px;
+  }
+
+  .feature-card p {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'manrope';
+  src: url('/fonts/Manrope.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Glina';
+  src: url('/fonts/Glina-Script-em.otf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --bg: #f8f7f4;
+  --bg-secondary: #e5eee4;
+  --text: #101e27;
+  --text-secondary: #6b7280;
+  --text-accent: #346552;
+  --accent: #15543e;
+  --accent-secondary: #4b967a;
+  --border: #e5e7eb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-family: 'manrope', 'Segoe UI', sans-serif;
+  font-weight: 400;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0 0 20px;
+  padding: 0;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-accent {
+  color: var(--text-accent);
+}
+
+@media (min-width: 321px) {
+  html {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 767px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1023px) {
+  html {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+}
