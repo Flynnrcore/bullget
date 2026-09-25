@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../../shared/ui/Button';
 import { IconBadge } from '../../shared/ui/IconBadge';
@@ -5,9 +6,34 @@ import './MainPage.css';
 
 export const MainPage = () => {
   const navigate = useNavigate();
+  const pageRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const sections = pageRef.current?.querySelectorAll<HTMLElement>('.page-section:not(.hero)');
+
+    if (!sections?.length) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -8% 0px' },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <>
+    <main ref={pageRef}>
       <div className="brand">
         <div className="brand__logo">
           <h1>буль</h1>
@@ -109,6 +135,6 @@ export const MainPage = () => {
           />
         </div>
       </div>
-    </>
+    </main>
   );
 };
