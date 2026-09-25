@@ -46,9 +46,14 @@ body {
 }
 
 h2 {
-  font-size: 24px;
   font-weight: 800;
-  line-height: 1.1;
+  font-size: 2.25em;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 .text-secondary {
@@ -63,24 +68,19 @@ h2 {
   html {
     font-size: 16px;
   }
-
-  h2 {
-    font-size: 32px;
-  }
 }
 
 @media (min-width: 767px) {
-  h2 {
-    font-size: 36px;
-  }
 }
 
 @media (min-width: 1023px) {
   html {
     font-size: 20px;
   }
+}
 
-  h2 {
+@media (min-width: 2529px) {
+  html {
     font-size: 38px;
   }
 }

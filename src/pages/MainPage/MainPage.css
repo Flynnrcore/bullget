@@ -21,7 +21,6 @@
 
 .brand__logo h1 {
   font-family: 'Glina', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 40px;
 }
 
 .hero {
@@ -49,6 +48,12 @@
 }
 
 .page-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.page-section {
   padding: 16px;
 }
 
@@ -70,16 +75,37 @@
   align-items: center;
   min-width: 0;
   border-radius: 8px;
-  padding: 8px;
-  gap: 12px;
+  padding: clamp(12px, 1.5vw, 24px);
+  gap: clamp(10px, 1.25vw, 20px);
 }
 
 .feature-card > div {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: 4px;
   min-width: 0;
 }
 
+.feature-card .icon-badge {
+  flex: 0 0 clamp(40px, 4vw, 64px);
+  width: clamp(40px, 4vw, 64px);
+}
+
+.feature-card .icon-badge__icon {
+  flex-basis: clamp(20px, 2vw, 32px);
+  width: clamp(20px, 2vw, 32px);
+}
+
+.feature-card h4 {
+  font-size: clamp(14px, 1.15vw, 22px);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
 .feature-card p {
-  max-width: 95%;
+  font-size: clamp(12px, 0.9vw, 16px);
+  line-height: 1.35;
 }
 
 .steps-section__item {
@@ -99,16 +125,23 @@
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  font-size: 0.85em;
 }
 
 .cta-section h3 {
   max-width: 50%;
   line-height: 1.1;
+  font-size: 1.2em;
 }
 
 .cta-section p {
-  font-size: 0.8rem;
   max-width: 60%;
+}
+
+.analytics-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .analytics-section__image {
@@ -153,13 +186,25 @@
     flex: 0 0 0;
   }
 
-  .feature-card h4 {
-    font-size: 16px;
-  }
-
   .feature-card p {
     max-width: 100%;
-    font-size: 14px;
+  }
+
+  .analytics-section {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .analytics-section__image {
+    flex: 0 0 60%;
+  }
+
+  .cta-section {
+    font-size: 1.1em;
+  }
+
+  .cta-section h3 {
+    font-size: 2em;
   }
 }
 
@@ -190,30 +235,7 @@
   }
 
   .feature-card {
-    min-height: 88px;
-    padding: 16px;
-  }
-
-  .feature-card h4 {
-    font-size: 18px;
-  }
-
-  .analytics-section {
-    display: flex;
-    gap: 12px;
-  }
-
-  .analytics-section__image {
-    width: 100vw;
-  }
-
-  .cta-section h3 {
-    font-size: 32px;
-  }
-
-  .feature-card p,
-  .cta-section p {
-    font-size: 20px;
+    min-height: 104px;
   }
 }
 
@@ -244,29 +266,11 @@
   }
 
   .feature-card {
-    min-height: 112px;
-    padding: 24px;
-  }
-
-  .feature-card h4 {
-    font-size: 22px;
-  }
-
-  .feature-card p {
-    font-size: 18px;
-  }
-
-  .cta-section h3 {
-    font-size: 36px;
-  }
-
-  .feature-card p,
-  .cta-section p {
-    font-size: 24px;
+    min-height: 128px;
   }
 }
 
-@media (min-width: 3839px) {
+@media (min-width: 2559px) {
   .page-section {
     padding: 72px 8vw;
   }
@@ -293,15 +297,6 @@
   }
 
   .feature-card {
-    min-height: 144px;
-    padding: 32px;
-  }
-
-  .feature-card h4 {
-    font-size: 28px;
-  }
-
-  .feature-card p {
-    font-size: 24px;
+    min-height: 152px;
   }
 }

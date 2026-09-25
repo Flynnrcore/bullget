@@ -16,8 +16,7 @@ export const MainPage = () => {
       <div className="hero page-section">
         <div className="hero__content">
           <h2>
-            Деньги
-            <br /> под контролем.
+            Деньги под <br /> контролем.
             <br /> Планы - ближе.
           </h2>
           <p className="text-secondary">
@@ -32,8 +31,8 @@ export const MainPage = () => {
         <div className="feature-card">
           <IconBadge type="success" />
           <div>
-            <h4>Расходы по категориям</h4>
-            <p className="text-secondary">Видно куда уходят деньги</p>
+            <h4>Расходы разделены по категориям</h4>
+            <p className="text-secondary">Видно куда уходят Ваши деньги</p>
           </div>
         </div>
         <div className="feature-card">
