@@ -1,8 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../../shared/ui/Button';
 import { IconBadge } from '../../shared/ui/IconBadge';
 import './MainPage.css';
 
 export const MainPage = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="brand">
@@ -23,7 +26,11 @@ export const MainPage = () => {
             {' '}
             Учитывайте расходы, планируйте бюджет и понимайте - сколько можно потратить
           </p>
-          <Button name="начать бесплатно →" css={{ marginTop: '8px' }} />
+          <Button
+            name="начать бесплатно →"
+            css={{ marginTop: '8px' }}
+            onClick={() => navigate('/cabinet')}
+          />
         </div>
       </div>
       <div className="feature-section page-section">
@@ -95,7 +102,11 @@ export const MainPage = () => {
           Больше осознанности, больше возможностей для того что делает Вас счастливее
         </p>
         <div className="additional_button">
-          <Button name="начать бесплатно →" css={{ marginTop: '8px' }} />
+          <Button
+            name="начать бесплатно →"
+            css={{ marginTop: '8px' }}
+            onClick={() => navigate('/cabinet')}
+          />
         </div>
       </div>
     </>

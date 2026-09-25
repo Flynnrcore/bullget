@@ -5,8 +5,8 @@
 }
 
 .brand > p {
-  margin-top: -10px;
-  font-size: 0.8rem;
+  margin-top: -8px;
+  font-size: 0.7rem;
 }
 
 .brand__logo {
@@ -135,7 +135,7 @@
 }
 
 .cta-section p {
-  max-width: 60%;
+  max-width: 50%;
 }
 
 .analytics-section div {
@@ -157,6 +157,12 @@
 
 .additional_button {
   display: none;
+}
+
+@media (min-width: 374px) {
+  .cta-section p {
+    max-width: 60%;
+  }
 }
 
 @media (min-width: 767px) {
@@ -211,6 +217,10 @@
     font-size: 1.8em;
   }
 
+  .cta-section p {
+    max-width: 50%;
+  }
+
   .additional_button {
     display: block;
   }
@@ -233,6 +243,11 @@
     font-size: 48px;
   }
 
+  .brand > p {
+  margin-top: -8px;
+  font-size: 0.85rem;
+}
+
   .hero__content {
     gap: 12px;
     max-width: 620px;
@@ -254,6 +269,11 @@
 
   .brand__logo {
     padding: 0 7vw;
+  }
+
+  .brand > p {
+  margin-top: -10px;
+  font-size: 0.98rem;
   }
 
   .brand__logo img {
@@ -287,12 +307,8 @@
     padding: 0 8vw;
   }
 
-  .brand__logo img {
-    width: 8rem;
-  }
-
   .brand__logo h1 {
-    font-size: 72px;
+    font-size: 100px;
   }
 
   .hero__content {
