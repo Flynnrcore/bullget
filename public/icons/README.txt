@@ -1,0 +1,11 @@
+Favicon package for website
+
+Upload these files to: /
+
+Insert this code into the <head> section:
+
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Bullget" />
+<link rel="manifest" href="/site.webmanifest" />

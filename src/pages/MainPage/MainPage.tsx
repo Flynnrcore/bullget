@@ -59,7 +59,7 @@ export const MainPage = () => {
           </p>
         </div>
         <picture className="analytics-section__image">
-          <source media="(max-width: 1023px)" srcSet="/chart-screen.webp" />
+          <source media="(max-width: 767px)" srcSet="/chart-screen.webp" />
           <img src="/cabinet-screen.webp" alt="Обзор финансового кабинета" />
         </picture>
       </div>
