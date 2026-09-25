@@ -155,6 +155,10 @@
   height: auto;
 }
 
+.additional_button {
+  display: none;
+}
+
 @media (min-width: 767px) {
   .brand {
     margin-bottom: 12px;
@@ -200,11 +204,15 @@
   }
 
   .cta-section {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .cta-section h3 {
-    font-size: 2em;
+    font-size: 1.8em;
+  }
+
+  .additional_button {
+    display: block;
   }
 }
 

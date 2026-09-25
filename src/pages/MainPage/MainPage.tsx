@@ -94,6 +94,9 @@ export const MainPage = () => {
         <p className="text-accent">
           Больше осознанности, больше возможностей для того что делает Вас счастливее
         </p>
+        <div className="additional_button">
+          <Button name="начать бесплатно →" css={{ marginTop: '8px' }} />
+        </div>
       </div>
     </>
   );
