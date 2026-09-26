@@ -19,6 +19,7 @@
   --accent: #15543e;
   --accent-secondary: #4b967a;
   --border: #e5e7eb;
+  --border-radius: 10px;
 }
 
 * {
