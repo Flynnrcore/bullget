@@ -1,0 +1,39 @@
+.cabinet-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.mini-widgets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.mini-widgets > .widget-wrapper:nth-child(3) {
+  grid-column: 1 / -1;
+}
+
+.period-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result-economy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 14px;
+  border-radius: 10px;
+  background-image: url('/result-banner.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  aspect-ratio: 2098 / 749;
+}
+
+.result-economy p {
+  font-size: 0.7em;
+}
