@@ -98,27 +98,34 @@ export const MainPage = () => {
       </section>
       <section className="steps-section page-section">
         <h3>Как начать или 3 простых шага:</h3>
-        <div className="steps-section__item">
-          <h2 className="text-accent">01</h2>
-          <div>
-            <h4>Создайте аккаунт</h4>
-            <p className="text-secondary">Пару минут чтобы начать вести бюджет</p>
-          </div>
-        </div>
-        <div className="steps-section__item">
-          <h2 className="text-accent">02</h2>
-          <div>
-            <h4>Добавьте доходы и расходы</h4>
-            <p className="text-secondary">Вносите операции в удобном формате</p>
-          </div>
-        </div>
-        <div className="steps-section__item">
-          <h2 className="text-accent">03</h2>
-          <div>
-            <h4>Спланируйте период</h4>
-            <p className="text-secondary">
-              Установите лимиты, копите на цели и следите за прогрессом
-            </p>
+        <div className="steps-section__layout">
+          <video className="mainpage-animation" autoPlay loop muted playsInline>
+            <source src="/mainpage-animation.mov" />
+          </video>
+          <div className="steps-section__list">
+            <div className="steps-section__item">
+              <h2 className="text-accent">01</h2>
+              <div>
+                <h4>Создайте аккаунт</h4>
+                <p className="text-secondary">Пару минут чтобы начать вести бюджет</p>
+              </div>
+            </div>
+            <div className="steps-section__item">
+              <h2 className="text-accent">02</h2>
+              <div>
+                <h4>Добавьте доходы и расходы</h4>
+                <p className="text-secondary">Вносите операции в удобном формате</p>
+              </div>
+            </div>
+            <div className="steps-section__item">
+              <h2 className="text-accent">03</h2>
+              <div>
+                <h4>Спланируйте период</h4>
+                <p className="text-secondary">
+                  Установите лимиты, копите на цели и следите за прогрессом
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
