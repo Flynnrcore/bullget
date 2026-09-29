@@ -100,7 +100,8 @@ export const MainPage = () => {
         <h3>Как начать или 3 простых шага:</h3>
         <div className="steps-section__layout">
           <video className="mainpage-animation" autoPlay loop muted playsInline>
-            <source src="/mainpage-animation.mov" />
+            <source src="/mainpage-animation.mov" type='video/mp4; codecs="hvc1"' />
+            <source src="/mainpage-animation.webm" type="video/webm" />
           </video>
           <div className="steps-section__list">
             <div className="steps-section__item">
