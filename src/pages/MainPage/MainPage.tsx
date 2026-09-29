@@ -37,7 +37,10 @@ export const MainPage = () => {
       <section className="brand">
         <div className="brand__logo">
           <h1>буль</h1>
-          <img src="/icon.webp" />
+          <span className="brand__wallet" role="img" aria-label="Иконка приложения Бульджет">
+            <img src="/dogwallet.webp" alt="" />
+            <img className="brand__wallet-zipper" src="/walletzipper.webp" alt="" />
+          </span>
           <h1>джет</h1>
         </div>
         <p className="text-accent">финансы без лишних сложностей</p>
