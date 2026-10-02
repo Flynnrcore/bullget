@@ -1,0 +1,18 @@
+.category-badge {
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--category-badge-color);
+  background-color: var(--category-badge-background);
+}
+
+.category-badge--small {
+  width: 36px;
+  aspect-ratio: 1;
+}
+
+.category-badge--medium {
+  width: 40px;
+  aspect-ratio: 1;
+}
