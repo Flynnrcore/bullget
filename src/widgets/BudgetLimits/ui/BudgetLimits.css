@@ -1,0 +1,92 @@
+.budget-limits {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.budget-limits__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.budget-limits__item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.budget-limits__item:last-child {
+  border-bottom: 0;
+}
+
+.budget-limits__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 0;
+}
+
+.budget-limits__category-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.budget-limits__category {
+  min-width: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.budget-limits__amounts {
+  flex: 0 0 auto;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.budget-limits__spent {
+  color: var(--limit-color);
+  font-weight: 700;
+}
+
+.budget-limits__progress {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background-color: #f1f3f2;
+}
+
+.budget-limits__progress-value {
+  height: 100%;
+  border-radius: inherit;
+  background-color: var(--limit-color);
+  transition: width 300ms ease;
+}
+
+.budget-limits__status {
+  align-self: flex-end;
+  color: var(--limit-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .budget-limits__progress-value {
+    transition: none;
+  }
+}

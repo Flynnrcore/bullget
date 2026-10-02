@@ -1,0 +1,12 @@
+.income-expenses-widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.income-expenses-chart {
+  width: 100%;
+  height: clamp(240px, 24vw, 340px);
+  min-width: 0;
+}

@@ -12,7 +12,6 @@
 .category-pie-chart {
   width: 100%;
   aspect-ratio: 1;
-  border: 1px solid var(--border);
 }
 
 .category-pie-chart .recharts-sector:focus:not(:focus-visible),

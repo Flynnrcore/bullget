@@ -17,7 +17,25 @@
 
 .period-section {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 10px;
+}
+
+.period-section > .date-range-picker {
+  flex: 1 1 100%;
+  width: 100%;
+}
+
+.main-widgets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.main-widgets > .widget-wrapper {
+  flex: 1 1 100%;
+  min-width: 0;
 }
 
 .result-economy {
@@ -36,4 +54,31 @@
 
 .result-economy p {
   font-size: 0.7em;
+}
+
+@media (min-width: 767px) {
+  .period-section {
+    flex-wrap: nowrap;
+  }
+
+  .period-section > .date-range-picker {
+    flex: 0 1 320px;
+    width: auto;
+  }
+
+  .mini-widgets {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .mini-widgets > .widget-wrapper {
+    min-width: 0;
+  }
+
+  .mini-widgets > .widget-wrapper:nth-child(3) {
+    grid-column: auto;
+  }
+
+  .main-widgets > .widget-wrapper {
+    flex-basis: calc((100% - 10px) / 2);
+  }
 }
